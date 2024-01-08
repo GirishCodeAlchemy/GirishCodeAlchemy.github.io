@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GirishCodeAlchemy - Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
+    <!-- Your existing stylesheet link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-3u5M1Qz14muq5qzOE5qZy6kfHLRmM2j7JYS/BzsyDQ5LjW7YHdFK8e26hn6H+H6ZY/xaF6fnHqiQz+mHJS40IA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .profile-image {
+            border-radius: 70%;
+            width: 150px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 80px;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3498db;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 2em;
+            text-align: left; /* Adjust text alignment as needed */
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0.5em 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-links img {
+            margin-right: 0.5em;
+            width: 80px;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="profile-image" src="assets/profile.png" alt="Girish V's Profile Image">
+        </div>
+        <div>
+            <h1>Girish V</h1>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vgirish10/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a href="https://www.instagram.com/vgirishreddy/"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=Instagram&logoColor=white"/></a>
+<a href="https://girishv.hashnode.dev/"><img src="https://img.shields.io/badge/-Hashnode-1877F2?style=flat&logo=Hashnode&logoColor=white"/></a>
+<!-- <a href="mailto:girishcodealchemy@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=Gmail&logoColor=white"/></a> -->
+        </div>
+    </header>
+
+    <nav>
+        <a onclick="showTab('portfolio')">Portfolio</a>
+        <a onclick="navigateToProjects()">Projects</a>
+    </nav>
+
+    <div class="container">
+        <section id="portfolio" style="display: block;">
+            <h2>About Me</h2>
+            <p>
+                Hi, I am Girish V, a seasoned IT professional with over 8 years of diverse experience in the dynamic
+                landscape of the technology industry. My journey has been marked by a passion for crafting innovative
+                solutions and a commitment to excellence in every project I undertake.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Proficiency</h2>
+            <p>
+                My expertise spans a range of technologies, including Python, Nodejs, Golang, Django, Flask, Sailjs, and
+                various database systems like Postgres, MongoDB, MySQL, Redis, and BigQuery. I am well-versed in DevOps
+                practices, utilizing tools such as Jenkins, Terraform, Ansible, Docker, Kubernetes, Apache & Confluent
+                Kafka, Elasticsearch (ELK), and others. Proficient in cloud environments, I have extensive experience
+                with AWS and GCP, having worked on projects involving Lambda, EKS, S3, GKE, and more.
+            </p>
+        </section>
+
+        <section>
+            <h2>Open Source Enthusiast</h2>
+            <p>
+                Passionate about open source, I actively contribute to projects and share my expertise with the
+                community. You can find my latest activities and contributions on my <a
+                    href="https://github.com/girishcodealchemy" target="_blank">GitHub profile</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Continuous Learning</h2>
+            <p>
+                In this ever-evolving tech landscape, I am committed to continuous learning, staying abreast of the
+                latest trends, and adapting to emerging technologies.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Contact me at: vgirish10@gmail.com</p>
+        <p>Follow me on GitHub: <a href="https://github.com/girishcodealchemy" target="_blank">GirishCodeAlchemy</a></p>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            const tabs = ['portfolio', 'projects'];
+
+            tabs.forEach(tab => {
+                const tabElement = document.getElementById(tab);
+                if (tab === tabName) {
+                    tabElement.style.display = 'block';
+                } else {
+                    tabElement.style.display = 'none';
+                }
+            });
+        }
+
+        function navigateToProjects() {
+            window.location.href = 'https://girishcodealchemy.github.io/alchemy-useful-packages';
+        }
+    </script>
+</body>
+
+</html>
