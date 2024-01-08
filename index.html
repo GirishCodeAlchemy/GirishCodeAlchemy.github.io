@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GirishCodeAlchemy - Portfolio</title>
 
-    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b08d512192.js" crossorigin="anonymous"></script>
 
-    <!-- Your existing stylesheet link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-3u5M1Qz14muq5qzOE5qZy6kfHLRmM2j7JYS/BzsyDQ5LjW7YHdFK8e26hn6H+H6ZY/xaF6fnHqiQz+mHJS40IA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <style>
@@ -40,13 +39,24 @@
 
         header h1 {
             margin: 0;
-            font-size: 80px;
+            font-size: 2rem;
         }
 
         header p {
             margin: 0;
         }
 
+        #download-resume {
+            color: white; /* Set the color to white */
+            text-decoration: none; /* Remove the default underline */
+            margin: 0.5em 0;
+            display: flex;
+            align-items: center;
+        }
+
+        #download-resume i {
+            margin-right: 0.5em; /* Adjust the margin as needed for space between icon and text */
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -100,7 +110,20 @@
 
         .social-links img {
             margin-right: 0.5em;
-            width: 80px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .social-links a.resume {
+            color: white;
+            text-decoration: none;
+            margin: 0.5em 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-links a.resume i {
+            margin-right: 0.5em;
         }
 
         footer {
@@ -119,13 +142,16 @@
         </div>
         <div>
             <h1>Girish V</h1>
+            <a id="download-resume" href="assets/Girish_V_Resume.pdf" download="Girish_V_Resume.pdf">
+                <i class="fas fa-download"></i> Resume
+            </a>
         </div>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/vgirish10/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
 <a href="https://www.instagram.com/vgirishreddy/"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=Instagram&logoColor=white"/></a>
 <a href="https://girishv.hashnode.dev/"><img src="https://img.shields.io/badge/-Hashnode-1877F2?style=flat&logo=Hashnode&logoColor=white"/></a>
-<!-- <a href="mailto:girishcodealchemy@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=Gmail&logoColor=white"/></a> -->
         </div>
+
     </header>
 
     <nav>
