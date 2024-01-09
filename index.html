@@ -138,13 +138,23 @@
             color: white;
             text-align: center;
             padding: 1em;
-            margin-top: auto; /* Push footer to the bottom */
+            position: relative;
+
+        }
+
+        #contact {
+            background-color: #34495e;
+            color: skyblue;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
 
         footer a {
             color: skyblue; /* Set the color to white */
             text-decoration: none; /* Remove the default underline */
-
         }
     </style>
 </head>
@@ -215,12 +225,13 @@
     </div>
 
     <footer>
-        <p>Contact me at: vgirish10@gmail.com</p>
-        <p>Follow me on GitHub: <a href="https://github.com/girishcodealchemy" target="_blank">GirishCodeAlchemy</a>
+        <p>Follow me on:</p><p>
             <a href="https://www.linkedin.com/in/vgirish10/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=Linkedin&logoColor=white" alt=""/></a>
             <a href="https://www.instagram.com/vgirishreddy/"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=Instagram&logoColor=white" alt=""/></a>
             <a href="https://girishv.hashnode.dev/"><img src="https://img.shields.io/badge/-Hashnode-1877F2?style=flat&logo=Hashnode&logoColor=white" alt=""/></a>
             <a href="https://github.com/girishcodealchemy"><img src="https://img.shields.io/badge/-Github-black?style=flat&logo=Git&logoColor=white" alt=""/></a></p>
+        <p id="contact">Contact me at: vgirish10@gmail.com</p>
+
     </footer>
 
     <script>
