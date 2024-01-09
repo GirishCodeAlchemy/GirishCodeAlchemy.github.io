@@ -19,6 +19,29 @@
       height: 100%;
       width: 100%;
     }
+
+    .custom-modal-dialog {
+      max-width: 80%; /* Set your desired width here */
+    }
+    .modal-body {
+      flex: 1;
+      overflow-y: auto;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card  a{
+      flex: 1;
+      object-fit: cover;
+      height: 200px;
+    }
+    .img-fluid {
+      max-width: 100%;
+      height: 90px;
+    }
   </style>
 </head>
 
@@ -47,33 +70,56 @@
       </div>
     </nav>
 
-    <section class="bg-body-tertiary py-4 d-flex align-items-center">
-      <div class="container text-center">
-        <div class="row justify-content-center">
-          <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
-            <h3 class="display-4">Projects</h3>
+    <article id="page-multicolumn" class="page-section vertical-padding bg-white">
+      <!-- <section class="bg-body-tertiary py-4 d-flex align-items-center"> -->
+      <section class="container family-sans  text-center py-4">
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+              <h3 class="display-4">Projects</h3>
 
-            <section class="container family-sans text-center py-4">
-              <div class="row justify-content-center py-2">
-                <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-                  <a class="nav-item nav-link project-image" href="https://girishcodealchemy.github.io/alchemy-useful-packages">
-                    <img class="img-fluid rounded" src="assets/project/usefulpackages.png" alt="Pip Package" />
-                  </a>
-                  <h5 class="mt-1"><a class="btn btn-outline-dark" href="https://girishcodealchemy.github.io/alchemy-useful-packages">Useful Packages</a></h5>
-                </section>
+              <section class="container family-sans text-center py-4">
+                <div class="row justify-content-center py-2">
+                  <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a class="nav-item nav-link project-image" href="https://girishcodealchemy.github.io/alchemy-useful-packages">
+                      <img class="img-fluid rounded" src="assets/project/usefulpackages.png" alt="Pip Package" />
+                    </a>
+                    <h5 class="mt-1"><a class="btn btn-outline-dark" href="https://girishcodealchemy.github.io/alchemy-useful-packages">Useful Packages</a></h5>
+                  </section>
 
-                <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-                  <a class="nav-item nav-link project-image" href="https://girishcodealchemy.github.io/TopNDiskAnalyzer/">
-                    <img class="img-fluid rounded" src="assets/project/topn_disk_analyzer.png" alt="Top N Disk Analyzer" />
-                  </a>
-                  <h5 class="mt-1"><a class="btn btn-outline-dark" href="https://girishcodealchemy.github.io/TopNDiskAnalyzer/">Top N Disk Analyzer</a></h5>
-                </section>
-              </div>
-            </section>
+                  <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a class="nav-item nav-link project-image" href="https://girishcodealchemy.github.io/TopNDiskAnalyzer/">
+                      <img class="img-fluid rounded" src="assets/project/topn_disk_analyzer.png" alt="Top N Disk Analyzer" />
+                    </a>
+                    <h5 class="mt-1"><a class="btn btn-outline-dark" href="https://girishcodealchemy.github.io/TopNDiskAnalyzer/">Top N Disk Analyzer</a></h5>
+                  </section>
+                  <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a class="nav-item nav-link project-image" href="https://girishcodealchemy.github.io/WebPageCapture/">
+                      <img class="img-fluid rounded" src="assets/project/web-page-capture.png" alt="Top N Disk Analyzer" />
+                    </a>
+                    <h5 class="mt-1"><a class="btn btn-outline-dark" href="https://girishcodealchemy.github.io/WebPageCapture/">WebPageCapture</a></h5>
+                  </section>
+                  <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a class="nav-item nav-link project-image" href="https://girishcodealchemy.github.io/News-sentiment-ML-ETL-pipeline/">
+                      <img class="img-fluid rounded" src="assets/project/3-spark-etl.png" alt="News-sentiment-ML-ETL-pipeline" />
+                    </a>
+                    <h5 class="mt-1"><a class="btn btn-outline-dark" href="https://girishcodealchemy.github.io/News-sentiment-ML-ETL-pipeline/">News-sentiment-ML-ETL-pipeline</a></h5>
+                  </section>
+
+                  <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a class="nav-item nav-link project-image" href="https://girishcodealchemy.github.io/aws-app-hosting/">
+                      <img class="img-fluid rounded" src="assets/project/Aws-app-hosting.png" alt="aws-app-hosting" />
+                    </a>
+                    <h5 class="mt-1"><a class="btn btn-outline-dark" href="https://girishcodealchemy.github.io/aws-app-hosting/">Aws app hosting</a></h5>
+                  </section>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </article>
+
   </header>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
