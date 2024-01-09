@@ -138,11 +138,11 @@
 <body>
     <header>
         <div>
-            <img class="profile-image" src="assets/profile.png" alt="Girish V's Profile Image">
+            <img class="profile-image" src="assets/profile/profile.png" alt="Girish V's Profile Image">
         </div>
         <div>
             <h1>Girish V</h1>
-            <a id="download-resume" href="assets/Girish_V_Resume.pdf" download="Girish_V_Resume.pdf">
+            <a id="download-resume" href="assets/profile/Girish_V_Resume.pdf" download="Girish_V_Resume.pdf">
                 <i class="fas fa-download"></i> Resume
             </a>
         </div>
@@ -156,7 +156,8 @@
 
     <nav>
         <a onclick="showTab('portfolio')">Portfolio</a>
-        <a onclick="navigateToProjects()">Projects</a>
+        <a class="nav-item nav-link text-white" href="project.html">Projects</a>
+        <a onclick="navigateToPages('https://girishv.hashnode.dev/')">Blogs</a>
     </nav>
 
     <div class="container">
@@ -217,8 +218,8 @@
             });
         }
 
-        function navigateToProjects() {
-            window.location.href = 'https://girishcodealchemy.github.io/alchemy-useful-packages';
+        function navigateToPages(pageUrl) {
+            window.location.href = pageUrl;
         }
     </script>
 </body>
