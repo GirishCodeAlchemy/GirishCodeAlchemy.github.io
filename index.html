@@ -30,6 +30,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
         }
 
         .profile-image {
@@ -39,7 +40,7 @@
 
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 3rem;
         }
 
         header p {
@@ -50,8 +51,15 @@
             color: white; /* Set the color to white */
             text-decoration: none; /* Remove the default underline */
             margin: 0.5em 0;
-            display: flex;
-            align-items: center;
+
+        }
+        #download-resume {
+            position: absolute;
+            bottom: 0;
+            right: 3;
+            margin: 0.5em 0;
+            color: white;
+            text-decoration: none;
         }
 
         #download-resume i {
@@ -132,6 +140,12 @@
             padding: 1em;
             margin-top: auto; /* Push footer to the bottom */
         }
+
+        footer a {
+            color: skyblue; /* Set the color to white */
+            text-decoration: none; /* Remove the default underline */
+
+        }
     </style>
 </head>
 <body>
@@ -141,17 +155,18 @@
         </div>
         <div>
             <h1>Girish V</h1>
-            <a id="download-resume" href="assets/profile/Girish_V_Resume.pdf" download="Girish_V_Resume.pdf">
-                <i class="fas fa-download"></i> Resume
-            </a>
-        </div>
-        <div class="social-links">
+
             <a href="https://www.linkedin.com/in/vgirish10/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=Linkedin&logoColor=white" alt=""/></a>
             <a href="https://www.instagram.com/vgirishreddy/"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=Instagram&logoColor=white" alt=""/></a>
             <a href="https://girishv.hashnode.dev/"><img src="https://img.shields.io/badge/-Hashnode-1877F2?style=flat&logo=Hashnode&logoColor=white" alt=""/></a>
             <a href="https://github.com/girishcodealchemy"><img src="https://img.shields.io/badge/-Github-black?style=flat&logo=Git&logoColor=white" alt=""/></a>
+            <p></p>
         </div>
-
+        <div class="social-links">
+            <a id="download-resume" href="assets/profile/Girish_V_Resume.pdf" download="Girish_V_Resume.pdf">
+                <i class="fas fa-download"></i> Resume
+            </a>
+         </div>
     </header>
 
     <nav>
@@ -201,7 +216,11 @@
 
     <footer>
         <p>Contact me at: vgirish10@gmail.com</p>
-        <p>Follow me on GitHub: <a href="https://github.com/girishcodealchemy" target="_blank">GirishCodeAlchemy</a></p>
+        <p>Follow me on GitHub: <a href="https://github.com/girishcodealchemy" target="_blank">GirishCodeAlchemy</a>
+            <a href="https://www.linkedin.com/in/vgirish10/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=Linkedin&logoColor=white" alt=""/></a>
+            <a href="https://www.instagram.com/vgirishreddy/"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=Instagram&logoColor=white" alt=""/></a>
+            <a href="https://girishv.hashnode.dev/"><img src="https://img.shields.io/badge/-Hashnode-1877F2?style=flat&logo=Hashnode&logoColor=white" alt=""/></a>
+            <a href="https://github.com/girishcodealchemy"><img src="https://img.shields.io/badge/-Github-black?style=flat&logo=Git&logoColor=white" alt=""/></a></p>
     </footer>
 
     <script>
